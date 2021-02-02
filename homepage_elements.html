@@ -1,19 +1,96 @@
+<style>
+    .container-header{
+        display: flex;
+        flex-direction: row;
+        justify-content: right;
+        padding-top: 20px;
+        padding-right: 20px;
+    }
+
+    .container-middle-body{
+        display: flex;
+        justify-content: center;
+    }
+    
+    .header-links li{
+        float:left;
+        margin: 0 5px;
+    }
+
+    .searchbar-div{
+        display: flex;
+        justify-content: center;
+    }
+    #search-bar{
+        padding: 5px 8px 0 16px;
+        width: auto;
+        border-style: solid;
+        border-radius: 25px;
+        width: 527px;
+        height: 34px;
+    }
+    .middle-buttons{
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        padding-top: 16px;
+    }
+    .middle-buttons li{
+        float: center;
+        margin: 0 7px;
+    }
+/* fix this text must be solid*/
+    [type="submit"]{
+        background-color: #f8f9fa;
+        border: 1px solid #f8f9fa;
+        font-family: Arial, Helvetica, sans-serif;
+        border-radius: 4px;
+        font-size: 14px;
+        height: 36px;
+        min-width: 54px;
+    }
+
+
+</style>
+
 <!DOCTYPE html>
+
+
 <html>
+    <head>
+        <link href="css/reset.css" rel="stylesheet" type="text/css" media="all">
+        <!--
+        <link href="css/main.css" rel="stylesheet" type="text/css" media="all">
+        -->
+
+    </head>
     <body>
-        <div id="top-toolbar">
-            <a href="">Gmail</a> <a href="">Images</a>
+        <div class="container-header" id="top-toolbar">
+            <ul class="header-links">
+            <li><a href="">Gmail</a> </li>
+            <li><a href="">Images</a> </li>
+            </ul>
         </div>
-        <div id="google-img">
+        <div class="container-middle-body" id="google-img">
             
             <img src="/googlelogo_color_272x92dp.png" alt="Google Logo" width="272" height="92"> 
 
         </div>
         <div id="search">
-            <input type="text" value="Type to search...">
-            <input type="submit" value="Search in Goole" aria-label="Search in Google">
-            <input type="submit" value="I am feeling lucky" aria-label="I will get lucky"> <br>
-            <p>Google offered in: <a href="">Eesti</a> </p>
+            
+            <div class="searchbar-div">
+                <input id="search-bar" maxlength="2048" type="text" placeholder="Type to search..."> <br>
+            </div>
+            
+            <div class="middle-buttons">
+                <ul class="middle-buttons">
+                   <li> <input type="submit" value="Search in Goole" aria-label="Search in Google"> </li> 
+                   <li> <input type="submit" value="I am feeling lucky" aria-label="I will get lucky"> </li> 
+                </ul>
+            </div>
+            <div class="container-middle-body">
+                <p style="margin-top: 30px;">Google offered in: <a href="">Eesti</a> </p>
+            </div>
         </div>
 
         <footer>
