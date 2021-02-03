@@ -1,0 +1,110 @@
+    .container-header{
+        display: flex;
+        flex-direction: row;
+        justify-content: right;
+        padding-top: 20px;
+        padding-right: 20px;
+    }
+
+    .container-middle-body{
+        display: flex;
+        justify-content: center;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 14px;
+        margin-bottom: 30px;
+    }
+    
+    .header-links li{
+        float:left;
+        margin: 0 5px;
+        font-family: Arial, sans-serif;
+        font-size: 13px;
+    }
+
+    .searchbar-div{
+        display: flex;
+        justify-content: center;
+    }
+    #search-bar{
+        padding: 5px 8px 0 16px;
+        width: auto;
+        border-style: solid;
+        border-radius: 25px;
+        width: 560px;
+        height: 44px;
+    }
+    .middle-buttons{
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        padding-top: 16px;
+    }
+    .middle-buttons li{
+        float: center;
+        margin: 0 7px;
+    }
+/* fix this text must be solid*/
+    [type="submit"]{
+        background-color: #f8f9fa;
+        border: 1px solid #f8f9fa;
+        font-family: Arial, sans-serif;
+        border-radius: 4px;
+        font-size: 14px;
+        height: 36px;
+        min-width: 54px;
+    }
+    [type="submit"]:hover{
+        border: 1px solid #d3d4d6;
+    }
+    #search-body{
+        margin-top: 250px;
+    }
+    #footer{
+        position: absolute;
+        bottom: 0px;
+        width: 100%;
+        background-color: #f2f2f2;
+    }
+    #country-block{
+        display: flex;
+        
+        border-bottom: 1px solid #dadce0;
+        font-size: 15px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #70757a;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-left: 30px;
+    }
+    #bottom-elements{
+        display: flex;
+        flex-flow: row;
+        font-size: 15px;
+        font-family: Arial, Helvetica, sans-serif;
+        padding-top: 15px;
+        padding-bottom: 30px;
+        padding-left: 30px;
+    }
+    #footer-info-left{
+        display: flex;
+        justify-content: space-evenly;
+        width: 400px;
+        position: fixed;
+        left: 10px;
+    }
+    
+    #footer-info-right{
+        display: flex;
+        justify-content: space-evenly;
+        width: 200px;
+        position: fixed;
+        right: 30px;
+    }
+    a{
+        color: #70757a;
+        text-decoration: none;
+    }
+    
+    a:hover{
+        text-decoration: underline;
+    }

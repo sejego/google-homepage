@@ -1,114 +1,59 @@
-<style>
-    .container-header{
-        display: flex;
-        flex-direction: row;
-        justify-content: right;
-        padding-top: 20px;
-        padding-right: 20px;
-    }
-
-    .container-middle-body{
-        display: flex;
-        justify-content: center;
-    }
-    
-    .header-links li{
-        float:left;
-        margin: 0 5px;
-    }
-
-    .searchbar-div{
-        display: flex;
-        justify-content: center;
-    }
-    #search-bar{
-        padding: 5px 8px 0 16px;
-        width: auto;
-        border-style: solid;
-        border-radius: 25px;
-        width: 527px;
-        height: 34px;
-    }
-    .middle-buttons{
-        display: flex;
-        justify-content: center;
-        flex-direction: row;
-        padding-top: 16px;
-    }
-    .middle-buttons li{
-        float: center;
-        margin: 0 7px;
-    }
-/* fix this text must be solid*/
-    [type="submit"]{
-        background-color: #f8f9fa;
-        border: 1px solid #f8f9fa;
-        font-family: Arial, Helvetica, sans-serif;
-        border-radius: 4px;
-        font-size: 14px;
-        height: 36px;
-        min-width: 54px;
-    }
-
-
-</style>
-
 <!DOCTYPE html>
-
 
 <html>
     <head>
         <link href="css/reset.css" rel="stylesheet" type="text/css" media="all">
-        <!--
         <link href="css/main.css" rel="stylesheet" type="text/css" media="all">
-        -->
 
     </head>
-    <body>
+    <body id="main-body">
         <div class="container-header" id="top-toolbar">
             <ul class="header-links">
             <li><a href="">Gmail</a> </li>
             <li><a href="">Images</a> </li>
             </ul>
         </div>
-        <div class="container-middle-body" id="google-img">
-            
-            <img src="/googlelogo_color_272x92dp.png" alt="Google Logo" width="272" height="92"> 
+        <div id="search-body">
+            <div class="container-middle-body" id="google-img">
+                
+                <img src="/googlelogo_color_272x92dp.png" alt="Google Logo" width="272" height="92"> 
 
-        </div>
-        <div id="search">
-            
-            <div class="searchbar-div">
-                <input id="search-bar" maxlength="2048" type="text" placeholder="Type to search..."> <br>
             </div>
-            
-            <div class="middle-buttons">
-                <ul class="middle-buttons">
-                   <li> <input type="submit" value="Search in Goole" aria-label="Search in Google"> </li> 
-                   <li> <input type="submit" value="I am feeling lucky" aria-label="I will get lucky"> </li> 
-                </ul>
-            </div>
-            <div class="container-middle-body">
-                <p style="margin-top: 30px;">Google offered in: <a href="">Eesti</a> </p>
+            <div id="search">
+                
+                <div class="searchbar-div">
+                    <input id="search-bar" maxlength="2048" type="text" placeholder="Type to search..."> <br>
+                </div>
+                
+                <div class="middle-buttons">
+                    <ul class="middle-buttons">
+                    <li> <input type="submit" value="Google Search" aria-label="Search in Google"> </li> 
+                    <li> <input type="submit" value="I'm Feeling Lucky" aria-label="I will get lucky"> </li> 
+                    </ul>
+                </div>
+                <div class="container-middle-body">
+                    <p style="margin-top: 30px;">Google offered in: <a href="">eesti</a> </p>
+                </div>
             </div>
         </div>
 
-        <footer>
-            <div id="country">
+        <footer id="footer">
+            <div id="country-block">
                 <p>Greece</p>
 
             </div>
-            <div id="footer-info-left">
-                <a href="">About</a>
-                <a href="">Advertising</a>
-                <a href="">Business</a>
-                <a href="">How Search works</a>
-            </div>
-            <div id="footer-info-right">
-                <a href="">Privacy</a>
-                <a href="">Terms</a>
-                <a href="">Settings</a>
-            </div>
+            <div id="bottom-elements">
+                <div id="footer-info-left">
+                    <a href="">About</a>
+                    <a href="">Advertising</a>
+                    <a href="">Business</a>
+                    <a href="">How Search works</a>
+                </div>
+                <div id="footer-info-right">
+                    <a href="">Privacy</a>
+                    <a href="">Terms</a>
+                    <a href="">Settings</a>
+                </div>
             </div>
         </footer>
         
