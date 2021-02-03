@@ -1,8 +1,8 @@
-# Google Homepage HTML & CSS project
+# Google Homepage HTML & CSS mini-project
 
 ## Introduction
 
-This is the project to learn the basics of HTML and CSS by creating a copy of the Google Homepage. The project is suggested by **The Odin Project**.
+This mini-project is aimed train author's basics of HTML and CSS by creating a copy of the Google Homepage. The project is suggested by **The Odin Project**.
 
 ## Copyright
 
